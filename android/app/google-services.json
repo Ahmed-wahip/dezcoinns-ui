@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "574168086072",
+    "project_id": "dzmovement-573e0",
+    "storage_bucket": "dzmovement-573e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574168086072:android:ccd6ca6dcd01916dec18cd",
+        "android_client_info": {
+          "package_name": "com.dzmovement.newone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574168086072-f1dn2j5f5ifgfib38upcdf0rinfkvdj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFJs_pig-eYnEp2qOlw2T36Dz4u8Vp2Kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574168086072-f1dn2j5f5ifgfib38upcdf0rinfkvdj2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "574168086072-fru7hjoffo74o3jibrushh3sjqsglj73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.dzcoins"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
