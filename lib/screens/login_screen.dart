@@ -138,10 +138,8 @@ class _LoginScreenState extends State<LoginScreen>
                       pushTo(context, const ForgotPasswordScreen()),
                   child: Text(
                     'forget_password'.tr,
-                    style: const TextStyle(
-                      color: green,
-                      decoration: TextDecoration.underline,
-                      decorationColor: green,
+                    style: TextStyle(
+                      color: red,
                     ),
                   ),
                 ),
@@ -150,21 +148,25 @@ class _LoginScreenState extends State<LoginScreen>
             SizedBox(
               height: height * 0.02,
             ),
-            MaterialButton(
-              minWidth: width / 1.6,
-              height: 50,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20)),
-              textColor: w,
-              color: green,
-              onPressed: () {
-                pushTo(context, const HomeTabsScren());
-              },
-              child: Text(
-                'login'.tr,
-                style: TextStyle(
-                  fontFamily: 'TextaHeavy',
-                  fontSize: width * 0.05,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: MaterialButton(
+                minWidth: width / 1.6,
+                height: 50,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                textColor: backgroundColor,
+                color: primaryColor,
+                onPressed: () {
+                  pushTo(context, const DzcoinsApp());
+                },
+                child: Text(
+                  'login'.tr,
+                  style: TextStyle(
+                    fontFamily: 'TextaHeavy',
+                    fontSize: width * 0.05,
+                  ),
                 ),
               ),
             ),
@@ -179,7 +181,7 @@ class _LoginScreenState extends State<LoginScreen>
                   onPressed: () => pushTo(context, const SignupScreen()),
                   child: Text(
                     'signup'.tr,
-                    style: const TextStyle(color: green),
+                    style: TextStyle(color: red),
                   ),
                 )
               ],

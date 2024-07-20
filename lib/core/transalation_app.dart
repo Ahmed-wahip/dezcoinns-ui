@@ -6,10 +6,10 @@ class Translation extends Translations {
         'en': {
 // tabs tr
           'card': 'Get the Virtual Credit card',
-          'home_page': 'Home Page',
-          'change_coins': 'Transfer points',
-          'withdrawal_profits': 'withdrawal profits',
-          'profil': 'Personal profile',
+          'home_page': 'Home',
+          'change_coins': 'Transfer',
+          'withdrawal_profits': 'withdrawal',
+          'profil': 'Personal',
 // service titles
           'currency_mining': 'Currency mining',
           'currency_investment': 'Currency investment',
@@ -158,7 +158,10 @@ class Translation extends Translations {
               'Discover a seamless way to send coins to fellow users within our app. Swiftly transfer currency with just a few taps, ensuring hassle-free transactions and seamless user interaction.',
           'terms':
               'I Accept All Terms And Conditions Written In The Website Below.',
-          'terms_err': 'Please Check The Box Of Terms And Condition'
+          'terms_err': 'Please Check The Box Of Terms And Condition',
+          'shere_app_msg': 'Share the application',
+          'add_user_photo': 'Add now photo',
+          'telegram_button_msg': 'Follow the Telegram channel'
         },
 
 /////
@@ -167,10 +170,10 @@ class Translation extends Translations {
 //// arabe
         'ar': {
 // tabs tr
-          'home_page': 'الصفحة الرئيسية',
-          'change_coins': 'تحويل النقاط',
-          'withdrawal_profits': 'سحب الأرباح',
-          'profil': 'الملف الشخصي',
+          'home_page': 'الرئيسية',
+          'change_coins': 'تحويل',
+          'withdrawal_profits': 'سحب',
+          'profil': 'ملفي',
 // service titles
           'currency_mining': 'تعدين العملة',
           'currency_investment': 'الاستثمار في العملة',
@@ -317,6 +320,9 @@ class Translation extends Translations {
               'انا موافق على جميع الشروط والأحكام المكتوبة في الموقع أدناه',
           'terms_err': 'يرجى التحقق من مربع الشروط والأحكام',
           'card': 'احصل على البطاقة',
+          'shere_app_msg': 'مشاركه التطبيق',
+          'add_user_photo': 'اضافه صوره جديده',
+          'telegram_button_msg': 'متابعه قناه التلغرام'
         },
       };
 }

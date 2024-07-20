@@ -1,10 +1,10 @@
 import 'package:dzcoins/controllers/localization_controller.dart';
+import 'package:dzcoins/core/color_app.dart';
 import 'package:dzcoins/core/transalation_app.dart';
 import 'package:dzcoins/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
-import '../core/color_app.dart';
 
 class RootApp extends StatelessWidget {
   const RootApp({super.key});
@@ -13,17 +13,17 @@ class RootApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     LocalController localController = Get.put(LocalController());
-    // Size size = MediaQuery.of(context).size;
     return GetMaterialApp(
       // Set the text direction to RTL
       translations: Translation(),
       locale: localController.currentLang,
       theme: ThemeData(
-        scaffoldBackgroundColor: bgColor,
+        scaffoldBackgroundColor: backgroundColor,
+        primaryColor: primaryColor,
         appBarTheme: AppBarTheme(
-          backgroundColor: green,
+          backgroundColor: primaryColor,
           elevation: 0,
-          foregroundColor: w,
+          foregroundColor: backgroundColor,
         ),
       ),
       title: 'Dzcoins',

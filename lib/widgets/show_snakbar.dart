@@ -1,4 +1,3 @@
-
 import 'package:dzcoins/core/color_app.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +13,7 @@ void snackbarMessage(
       children: [
         Icon(
           Icons.error,
-          color: w,
+          color: backgroundColor,
         ),
         const SizedBox(
           width: 10,

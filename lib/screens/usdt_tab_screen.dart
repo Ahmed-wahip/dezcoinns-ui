@@ -180,8 +180,8 @@ class _UsdtTabScrenState extends State<UsdtTabScren>
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                color: green,
-                textColor: w,
+                color: primaryColor,
+                textColor: backgroundColor,
                 onPressed: () {},
                 child: SizedBox(
                   width: size.width / 1.5,

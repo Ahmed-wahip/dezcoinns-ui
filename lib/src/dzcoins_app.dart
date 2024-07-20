@@ -1,23 +1,21 @@
 import 'package:dzcoins/core/color_app.dart';
 import 'package:dzcoins/controllers/tabs_controller.dart';
+import 'package:dzcoins/widgets/navgetor_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-class HomeTabsScren extends StatefulWidget {
-  const HomeTabsScren({super.key});
+class DzcoinsApp extends StatefulWidget {
+  const DzcoinsApp({super.key});
 
   @override
-  State<HomeTabsScren> createState() => _HomeTabsScrenState();
+  State<DzcoinsApp> createState() => _DzcoinsAppState();
 }
 
-class _HomeTabsScrenState extends State<HomeTabsScren> {
+class _DzcoinsAppState extends State<DzcoinsApp> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {});
+    // WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {});
   }
 
   @override
@@ -28,9 +26,15 @@ class _HomeTabsScrenState extends State<HomeTabsScren> {
         appBar: AppBar(
           title: Text(
             'Dzmovement',
-            style: TextStyle(color: w, fontFamily: 'TextaHeavy'),
+            style: TextStyle(color: backgroundColor, fontFamily: 'TextaHeavy'),
           ),
-          leading: Container(),
+          leading: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: CircleAvatar(
+              backgroundImage: const AssetImage("assets/icons/dzm_logo.png"),
+              backgroundColor: backgroundColor,
+            ),
+          ),
           centerTitle: false,
           actions: [
             Padding(
@@ -44,7 +48,7 @@ class _HomeTabsScrenState extends State<HomeTabsScren> {
                   Text(
                     "authContoller".toString(),
                     style: TextStyle(
-                      color: w,
+                      color: backgroundColor,
                       fontWeight: FontWeight.w400,
                       fontSize: 16,
                     ),
@@ -57,60 +61,45 @@ class _HomeTabsScrenState extends State<HomeTabsScren> {
         body: Consumer<TabsController>(
           builder: (context, TabsController tabsController, child) => Center(
             child:
-                TabsController.screns.elementAt(tabsController.selectedIndex),
+                TabsController.screns.elementAt(TabsController.selectedIndex),
           ),
         ),
-        // floatingActionButton: FloatingActionButton(
-        //   onPressed: () async {
-        //     // Add your onPressed logic here
-        //     await _launchUrl();
-        //   },
-        //   backgroundColor: green,
-        //   elevation: 0,
-        //   child: Icon(
-        //     Icons.telegram,
-        //     color: w,
-        //     size: 30,
-        //   ), // You can adjust the elevation as per your preference
-        // ),
         bottomNavigationBar: Consumer<TabsController>(
-          builder: (context, tabsController, child) => BottomNavigationBar(
-            items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                icon: const Icon(Icons.home),
-                label: 'home_page'.tr,
-                backgroundColor: green,
-              ),
-              BottomNavigationBarItem(
-                icon: const Icon(Icons.currency_exchange),
-                label: 'change_coins'.tr,
-                backgroundColor: green,
-              ),
-              BottomNavigationBarItem(
-                icon: const Icon(Icons.payment),
-                label: 'withdrawal_profits'.tr,
-                backgroundColor: green,
-              ),
-              BottomNavigationBarItem(
-                icon: const Icon(Icons.settings),
-                label: 'profil'.tr,
-                backgroundColor: green,
+          builder: (context, tabsController, child) => Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                height: 55.5,
+                width: MediaQuery.of(context).size.width * 1 - 20,
+                decoration: BoxDecoration(
+                  color: Colors.grey[300],
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.1),
+                      blurRadius: 30,
+                      offset: const Offset(0, 5),
+                    ),
+                  ],
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: ListView.builder(
+                  itemCount: 4,
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.all(7.2),
+                  itemBuilder: (context, index) => GestureDetector(
+                    onTap: () => tabsController.onItemTapped(index, context),
+                    child: NavigatorBar(
+                      index: index,
+                      currenIndex: TabsController.selectedIndex,
+                    ),
+                  ),
+                ),
               ),
             ],
-            currentIndex: tabsController.selectedIndex,
-            selectedItemColor: w,
-            showUnselectedLabels: true,
-            unselectedItemColor: Colors.white.withOpacity(0.7),
-            onTap: (index) => tabsController.onItemTapped(index, context),
           ),
         ),
       ),
     );
-  }
-
-  Future<void> _launchUrl() async {
-    if (!await launchUrl(Uri.parse('https://t.me/DzMovment'))) {
-      throw Exception('Could not launch url');
-    }
   }
 }

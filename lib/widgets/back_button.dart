@@ -19,10 +19,10 @@ class CustomeBackBotton extends StatelessWidget {
         elevation: 15,
         child: IconButton(
           onPressed: () => Navigator.pop(context),
-          icon: const Icon(
+          icon:  Icon(
             Icons.arrow_back_ios_new,
             size: 20,
-            color: green,
+            color: primaryColor,
           ),
         ),
       ),

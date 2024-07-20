@@ -40,7 +40,9 @@ class _CurrencyInvestmentScrenState extends State<CurrencyInvestmentScren>
         title: Text(
           'currency_invest'.tr,
           style: TextStyle(
-              fontSize: size.width * 0.07, color: w, fontFamily: 'TextaHeavy'),
+              fontSize: size.width * 0.07,
+              color: backgroundColor,
+              fontFamily: 'TextaHeavy'),
         ),
       ),
       body: Form(
@@ -59,7 +61,7 @@ class _CurrencyInvestmentScrenState extends State<CurrencyInvestmentScren>
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 color: Colors.blue,
-                textColor: w,
+                textColor: backgroundColor,
                 onPressed: () =>
                     pushTo(context, const RequstewithPayerScreen()),
                 child: SizedBox(
@@ -217,10 +219,10 @@ class _CurrencyInvestmentScrenState extends State<CurrencyInvestmentScren>
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: InkWell(
-                hoverColor: w,
-                focusColor: w,
-                highlightColor: w,
-                splashColor: w,
+                hoverColor: backgroundColor,
+                focusColor: backgroundColor,
+                highlightColor: backgroundColor,
+                splashColor: backgroundColor,
                 child: Container(
                     height: size.height * 0.24,
                     decoration: BoxDecoration(
@@ -244,8 +246,8 @@ class _CurrencyInvestmentScrenState extends State<CurrencyInvestmentScren>
                 height: size.height * 0.06,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
-                color: green,
-                textColor: w,
+                color: primaryColor,
+                textColor: backgroundColor,
                 onPressed: () {},
                 child: SizedBox(
                   width: size.width / 1.5,

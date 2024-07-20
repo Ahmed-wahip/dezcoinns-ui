@@ -3,7 +3,6 @@ import 'package:dzcoins/models/user.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 // ignore: must_be_immutable
 class TransferScren extends StatefulWidget {
   UserModel userModel;
@@ -101,8 +100,8 @@ class _TransferScrenState extends State<TransferScren>
               height: size.height * 0.07,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
-              textColor: w,
-              color: green,
+              textColor: backgroundColor,
+              color: primaryColor,
               onPressed: () {},
               child: Text(
                 'send'.tr,

@@ -20,7 +20,7 @@ class MarketWidget extends StatelessWidget {
           pushTo(context, const MarketScren());
         },
         child: SizedBox(
-          height: height * 0.27,
+          height: height * 0.25,
           width: width,
           child: Container(
             decoration: BoxDecoration(
@@ -55,7 +55,7 @@ class MarketWidget extends StatelessWidget {
                       Text(
                         'shop'.tr,
                         style: TextStyle(
-                            color: w,
+                            color: backgroundColor,
                             fontSize: width * 0.055,
                             fontFamily: 'Lato'),
                       ),
@@ -67,7 +67,7 @@ class MarketWidget extends StatelessWidget {
                         child: Text(
                           'shop_des'.tr,
                           style: TextStyle(
-                              color: w,
+                              color: backgroundColor,
                               fontSize: width * 0.035,
                               fontFamily: 'workSans'),
                         ),

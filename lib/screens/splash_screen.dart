@@ -1,6 +1,5 @@
 import 'package:dzcoins/core/service.dart';
 import 'package:dzcoins/screens/login_screen.dart';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -42,13 +42,13 @@ class ShowAdsVideo extends StatelessWidget {
                 Icon(
                   Icons.lock,
                   size: 40,
-                  color: w,
+                  color: backgroundColor,
                 ),
                 const SizedBox(height: 20),
                 Text(
                   "Vip 1",
                   style: TextStyle(
-                    color: w,
+                    color: backgroundColor,
                     fontWeight: FontWeight.w400,
                     fontSize: 16,
                   ),
@@ -84,13 +84,13 @@ class ShowAdsVideo extends StatelessWidget {
                 Icon(
                   Icons.lock,
                   size: 40,
-                  color: w,
+                  color: backgroundColor,
                 ),
                 const SizedBox(height: 20),
                 Text(
                   "Vip 1",
                   style: TextStyle(
-                    color: w,
+                    color: backgroundColor,
                     fontWeight: FontWeight.w400,
                     fontSize: 16,
                   ),
@@ -128,7 +128,7 @@ class ShowAdsVideo extends StatelessWidget {
                 Text(
                   "30 min",
                   style: TextStyle(
-                    color: w,
+                    color: backgroundColor,
                     fontWeight: FontWeight.w400,
                     fontSize: 16,
                   ),
@@ -137,7 +137,7 @@ class ShowAdsVideo extends StatelessWidget {
                 Text(
                   "1 kounze",
                   style: TextStyle(
-                    color: w,
+                    color: backgroundColor,
                     fontWeight: FontWeight.w400,
                     fontSize: 16,
                   ),
@@ -150,4 +150,3 @@ class ShowAdsVideo extends StatelessWidget {
     );
   }
 }
-

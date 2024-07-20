@@ -22,7 +22,7 @@ class DzmLeft extends StatelessWidget {
                 Text(
                   "data.toString()",
                   style: TextStyle(
-                      color: w,
+                      color: backgroundColor,
                       fontSize: size.width * 0.035,
                       fontFamily: 'workSans'),
                 ),
@@ -33,7 +33,7 @@ class DzmLeft extends StatelessWidget {
                   child: Text(
                     'currency_investmen_dessecond'.tr,
                     style: TextStyle(
-                        color: w,
+                        color: backgroundColor,
                         fontSize: size.width * 0.035,
                         fontFamily: 'workSans'),
                   ),
@@ -44,7 +44,7 @@ class DzmLeft extends StatelessWidget {
               child: Text(
                 'currency_investment_descriptionThird'.tr,
                 style: TextStyle(
-                    color: w,
+                    color: backgroundColor,
                     fontSize: size.width * 0.035,
                     fontFamily: 'workSans'),
               ),

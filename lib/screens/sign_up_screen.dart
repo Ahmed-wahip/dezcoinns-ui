@@ -146,34 +146,35 @@ class _SignupScreenState extends State<SignupScreen>
                 textInputAction: TextInputAction.next,
                 obscureText: !visibility,
                 decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.lock),
-                    suffixIcon: IconButton(
-                        onPressed: onVisibilityCahnged,
-                        icon: visibility
-                            ? const Icon(Icons.visibility)
-                            : const Icon(Icons.visibility_off)),
-                    hintText: 'password'.tr,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    )),
+                  prefixIcon: const Icon(Icons.lock),
+                  suffixIcon: IconButton(
+                      onPressed: onVisibilityCahnged,
+                      icon: visibility
+                          ? const Icon(Icons.visibility)
+                          : const Icon(Icons.visibility_off)),
+                  hintText: 'password'.tr,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
               ),
             ),
-            // SizedBox(
-            //   height: height * 0.02,
-            // ),
-            // Padding(
-            //   padding: const EdgeInsets.symmetric(horizontal: 20),
-            //   child: TextFormField(
-            //     textInputAction: TextInputAction.go,
-            //     controller: authContoller.refralLink,
-            //     decoration: InputDecoration(
-            //         prefixIcon: const Icon(Icons.link),
-            //         hintText: 'promo_code'.tr,
-            //         border: OutlineInputBorder(
-            //           borderRadius: BorderRadius.circular(20),
-            //         )),
-            //   ),
-            // ),
+            SizedBox(
+              height: height * 0.02,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: TextFormField(
+                textInputAction: TextInputAction.go,
+                decoration: InputDecoration(
+                  prefixIcon: const Icon(Icons.link),
+                  hintText: 'promo_code'.tr,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25),
               child: Row(
@@ -183,13 +184,12 @@ class _SignupScreenState extends State<SignupScreen>
                     onPressed: () => pushTo(context, const LoginScreen()),
                     child: Text(
                       'login'.tr,
-                      style: const TextStyle(color: green),
+                      style: TextStyle(color: red),
                     ),
                   )
                 ],
               ),
             ),
-
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
               child: CheckboxListTile(
@@ -200,15 +200,15 @@ class _SignupScreenState extends State<SignupScreen>
                 ),
                 subtitle: TextButton(
                   onPressed: () {},
-                  child: const Text(
+                  child: Text(
                     'www.dzmovment.com',
+                    style: TextStyle(color: blue),
                   ),
                 ),
                 value: false,
                 onChanged: (w) {},
               ),
             ),
-
             SizedBox(
               height: height * 0.001,
             ),
@@ -219,8 +219,8 @@ class _SignupScreenState extends State<SignupScreen>
                 height: 50,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
-                textColor: w,
-                color: green,
+                textColor: backgroundColor,
+                color: primaryColor,
                 onPressed: () {},
                 child: SizedBox(
                   width: width / 2,
@@ -236,7 +236,7 @@ class _SignupScreenState extends State<SignupScreen>
                         width: 10,
                       ),
                       CircularProgressIndicator(
-                        color: w,
+                        color: backgroundColor,
                         strokeWidth: 0.8,
                       ),
                     ],

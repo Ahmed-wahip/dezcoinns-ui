@@ -32,8 +32,8 @@ class UserWidget extends StatelessWidget {
       ),
       trailing: MaterialButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-        textColor: w,
-        color: green,
+        textColor: backgroundColor,
+        color: primaryColor,
         height: size.height * 0.06,
         minWidth: size.width * 0.1,
         onPressed: () => pushTo(

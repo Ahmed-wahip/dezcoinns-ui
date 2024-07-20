@@ -36,9 +36,9 @@ class _WithThrawScreenState extends State<WithThrawScreen>
         appBar: AppBar(
           toolbarHeight: 10,
           bottom: TabBar(
-            indicatorColor: w,
+            indicatorColor: backgroundColor,
             indicatorSize: TabBarIndicatorSize.label,
-            labelColor: w,
+            labelColor: backgroundColor,
             tabs: const [
               Tab(icon: Text('USDT')),
               Tab(icon: Text('Payer')),

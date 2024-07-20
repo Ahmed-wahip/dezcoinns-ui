@@ -5,7 +5,6 @@ import 'package:dzcoins/widgets/back_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 // ignore: must_be_immutable
 class OrderScren extends StatefulWidget {
   ProductModel productModel;
@@ -40,14 +39,14 @@ class _OrderScrenState extends State<OrderScren>
         children: [
           Positioned.fill(
               child: Container(
-            color: green,
+            color: primaryColor,
           )),
           Positioned.fill(
             top: size.height * 0.17,
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 400),
               decoration: BoxDecoration(
-                color: w,
+                color: backgroundColor,
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),
@@ -60,7 +59,6 @@ class _OrderScrenState extends State<OrderScren>
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: TextFormField(
-                 
                         decoration: InputDecoration(
                           prefixIcon: TextButton(
                             onPressed: () {
@@ -90,8 +88,6 @@ class _OrderScrenState extends State<OrderScren>
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: TextFormField(
-                
-                       
                         decoration: InputDecoration(
                           prefixIcon: const Icon(Icons.location_city),
                           hintText: 'state'.tr,
@@ -107,7 +103,6 @@ class _OrderScrenState extends State<OrderScren>
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: TextFormField(
-                  
                         decoration: InputDecoration(
                           prefixIcon: const Icon(Icons.location_on),
                           hintText: 'adress'.tr,
@@ -123,7 +118,6 @@ class _OrderScrenState extends State<OrderScren>
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: TextFormField(
-                  
                         keyboardType: TextInputType.number,
                         decoration: InputDecoration(
                           prefixIcon: const Icon(Icons.numbers),
@@ -140,7 +134,6 @@ class _OrderScrenState extends State<OrderScren>
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: TextFormField(
-                   
                         keyboardType: TextInputType.phone,
                         decoration: InputDecoration(
                             prefixIcon: TextButton(
@@ -176,7 +169,6 @@ class _OrderScrenState extends State<OrderScren>
                           }
                           return null;
                         },
-                   
                         decoration: InputDecoration(
                             prefixIcon: const Icon(Icons.email),
                             hintText: 'email'.tr,
@@ -195,8 +187,8 @@ class _OrderScrenState extends State<OrderScren>
                         height: size.height * 0.07,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20)),
-                        textColor: w,
-                        color: green,
+                        textColor: backgroundColor,
+                        color: primaryColor,
                         onPressed: () {},
                         child: Text(
                           'order'.tr,
@@ -222,7 +214,7 @@ class _OrderScrenState extends State<OrderScren>
                 'order'.tr,
                 style: TextStyle(
                     fontSize: size.width * 0.07,
-                    color: w,
+                    color: backgroundColor,
                     fontFamily: 'TextaHeavy'),
               ),
             ),

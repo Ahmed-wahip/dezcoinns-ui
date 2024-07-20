@@ -35,7 +35,7 @@ class TaskAdsScreen extends StatelessWidget {
               child: Text(
                 "Task namber ${index + 1}",
                 style: TextStyle(
-                  color: w,
+                  color: backgroundColor,
                   fontSize: width * 0.045,
                   fontFamily: 'workSans',
                 ),

@@ -142,8 +142,8 @@ class _PayerTabScrenState extends State<PayerTabScren>
                   height: size.height * 0.06,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
-                  color: green,
-                  textColor: w,
+                  color: primaryColor,
+                  textColor: backgroundColor,
                   onPressed: () {},
                   child: SizedBox(
                     width: size.width / 1.5,

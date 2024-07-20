@@ -5,7 +5,7 @@ import 'package:dzcoins/screens/withthraw_screen.dart';
 import 'package:flutter/material.dart';
 
 class TabsController extends ChangeNotifier {
-  int selectedIndex = 0;
+  static int selectedIndex = 0;
 
   static const List<Widget> screns = <Widget>[
     HomeScren(),

@@ -44,7 +44,7 @@ class CaunterTime extends StatelessWidget {
                     child: Text(
                       "23:58:54",
                       style: TextStyle(
-                        color: w,
+                        color: backgroundColor,
                         fontSize: width * 0.035,
                         fontFamily: 'workSans',
                       ),
@@ -70,7 +70,7 @@ class CaunterTime extends StatelessWidget {
                           Text(
                             "authContoller".toString(),
                             style: TextStyle(
-                              color: w,
+                              color: backgroundColor,
                               fontWeight: FontWeight.w400,
                               fontSize: 16,
                             ),
@@ -90,7 +90,7 @@ class CaunterTime extends StatelessWidget {
                             Text(
                               'currency_mining_des'.tr,
                               style: TextStyle(
-                                color: w,
+                                color: backgroundColor,
                                 fontSize: width * 0.035,
                                 fontFamily: 'workSans',
                               ),

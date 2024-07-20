@@ -1,4 +1,3 @@
-
 // ignore_for_file: must_be_immutable
 
 import 'package:dzcoins/core/color_app.dart';
@@ -117,14 +116,14 @@ class _SuccesScrenState extends State<SuccesScren>
             height: size.height * 0.06,
             width: size.width / 2,
             child: MaterialButton(
-                textColor: w,
-                color: green,
+                textColor: backgroundColor,
+                color: primaryColor,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(context,
                       PageRouteBuilder(pageBuilder: (context, s, a) {
-                    return const HomeTabsScren();
+                    return const DzcoinsApp();
                   }), (route) => false);
                 },
                 child: Text('close'.tr)),

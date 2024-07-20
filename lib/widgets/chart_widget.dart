@@ -1,4 +1,5 @@
 import 'package:dzcoins/core/color_app.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
@@ -15,10 +16,10 @@ class ChartWidget extends StatelessWidget {
       borderWidth: 2,
       // borderColor: green,
       // backgroundColor: blue,
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       // plotAreaBorderColor: green,
       // plotAreaBackgroundColor: green,
-      palette: [green],
+      palette: [backgroundColor],
       enableAxisAnimation: true,
       plotAreaBorderWidth: 2,
 

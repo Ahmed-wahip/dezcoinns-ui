@@ -38,14 +38,14 @@ class _MarketScrenState extends State<MarketScren>
         children: [
           Positioned.fill(
               child: Container(
-            color: green,
+            color: primaryColor,
           )),
           Positioned.fill(
               top: size.height * 0.17,
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 400),
                 decoration: BoxDecoration(
-                  color: w,
+                  color: backgroundColor,
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),
@@ -56,7 +56,6 @@ class _MarketScrenState extends State<MarketScren>
                     SizedBox(
                       height: size.height * 0.02,
                     ),
-                  
                   ],
                 ),
               )),
@@ -70,7 +69,7 @@ class _MarketScrenState extends State<MarketScren>
                 'shop'.tr,
                 style: TextStyle(
                   fontSize: size.width * 0.07,
-                  color: w,
+                  color: backgroundColor,
                   fontFamily: 'TextaHeavy',
                 ),
               ),

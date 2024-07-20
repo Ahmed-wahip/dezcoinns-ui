@@ -37,7 +37,9 @@ class _RequstewithPayerScreenState extends State<RequstewithPayerScreen>
         title: Text(
           'currency_invest'.tr,
           style: TextStyle(
-              fontSize: size.width * 0.07, color: w, fontFamily: 'TextaHeavy'),
+              fontSize: size.width * 0.07,
+              color: backgroundColor,
+              fontFamily: 'TextaHeavy'),
         ),
       ),
       body: Form(
@@ -170,10 +172,10 @@ class _RequstewithPayerScreenState extends State<RequstewithPayerScreen>
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: InkWell(
-                  hoverColor: w,
-                  focusColor: w,
-                  highlightColor: w,
-                  splashColor: w,
+                  hoverColor: backgroundColor,
+                  focusColor: backgroundColor,
+                  highlightColor: backgroundColor,
+                  splashColor: backgroundColor,
                   child: Container(
                     height: size.height * 0.24,
                     decoration: BoxDecoration(
@@ -197,8 +199,8 @@ class _RequstewithPayerScreenState extends State<RequstewithPayerScreen>
                 height: size.height * 0.06,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
-                color: green,
-                textColor: w,
+                color: primaryColor,
+                textColor: backgroundColor,
                 onPressed: () {},
                 child: SizedBox(
                   width: size.width / 1.5,

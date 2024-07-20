@@ -20,7 +20,7 @@ class CurrenctMiningWidget extends StatelessWidget {
           pushTo(context, const CurrencyMiningScreen());
         },
         child: SizedBox(
-          height: height * 0.27,
+          height: height * 0.25,
           width: width,
           child: Container(
             decoration: BoxDecoration(
@@ -56,7 +56,7 @@ class CurrenctMiningWidget extends StatelessWidget {
                         child: Text(
                           'currency_mining'.tr,
                           style: TextStyle(
-                              color: w,
+                              color: backgroundColor,
                               fontSize: width * 0.055,
                               fontFamily: 'Lato',
                               overflow: TextOverflow.ellipsis),
@@ -74,7 +74,7 @@ class CurrenctMiningWidget extends StatelessWidget {
                               Text(
                                 'currency_mining_des'.tr,
                                 style: TextStyle(
-                                  color: w,
+                                  color: backgroundColor,
                                   fontSize: width * 0.035,
                                   fontFamily: 'workSans',
                                 ),

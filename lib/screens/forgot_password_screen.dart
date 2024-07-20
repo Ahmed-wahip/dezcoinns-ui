@@ -90,34 +90,35 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen>
           Align(
             alignment: Alignment.center,
             child: MaterialButton(
-                minWidth: size.width / 1.6,
-                height: 50,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
-                textColor: w,
-                color: green,
-                onPressed: () {},
-                child: SizedBox(
-                  width: size.width / 2,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'send'.tr,
-                        style: TextStyle(
-                            fontFamily: 'TextaHeavy',
-                            fontSize: size.width * 0.05),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      CircularProgressIndicator(
-                        color: w,
-                        strokeWidth: 0.8,
-                      ),
-                    ],
-                  ),
-                )),
+              minWidth: size.width / 1.6,
+              height: 50,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20)),
+              textColor: backgroundColor,
+              color: primaryColor,
+              onPressed: () {},
+              child: SizedBox(
+                width: size.width / 2,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'send'.tr,
+                      style: TextStyle(
+                          fontFamily: 'TextaHeavy',
+                          fontSize: size.width * 0.05),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    CircularProgressIndicator(
+                      color: backgroundColor,
+                      strokeWidth: 0.8,
+                    ),
+                  ],
+                ),
+              ),
+            ),
           )
         ],
       ),

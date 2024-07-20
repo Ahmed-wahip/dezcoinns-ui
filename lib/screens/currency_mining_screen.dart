@@ -9,7 +9,7 @@ class CurrencyMiningScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bgColor,
+      backgroundColor: backgroundColor,
       appBar: AppBar(
         centerTitle: false,
         actions: [
@@ -24,7 +24,7 @@ class CurrencyMiningScreen extends StatelessWidget {
                 Text(
                   "authContoller".toString(),
                   style: TextStyle(
-                    color: w,
+                    color: backgroundColor,
                     fontWeight: FontWeight.w400,
                     fontSize: 16,
                   ),

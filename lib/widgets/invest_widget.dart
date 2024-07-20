@@ -20,7 +20,7 @@ class InvestWidget extends StatelessWidget {
           pushTo(context, const CurrencyInvestmentScren());
         },
         child: SizedBox(
-          height: height * 0.27,
+          height: height * 0.25,
           width: width,
           child: Container(
             decoration: BoxDecoration(
@@ -56,7 +56,7 @@ class InvestWidget extends StatelessWidget {
                         child: Text(
                           'currency_investment'.tr,
                           style: TextStyle(
-                              color: w,
+                              color: backgroundColor,
                               fontSize: width * 0.055,
                               fontFamily: 'Lato',
                               overflow: TextOverflow.ellipsis),
@@ -74,7 +74,7 @@ class InvestWidget extends StatelessWidget {
                               Text(
                                 'currency_investmen_des'.tr,
                                 style: TextStyle(
-                                  color: w,
+                                  color: backgroundColor,
                                   fontSize: width * 0.035,
                                   fontFamily: 'workSans',
                                 ),

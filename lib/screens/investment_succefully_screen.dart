@@ -1,10 +1,8 @@
-
 import 'package:dzcoins/core/color_app.dart';
 import 'package:dzcoins/src/dzcoins_app.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-
 
 class InvestSuccefullySentScreen extends StatefulWidget {
   const InvestSuccefullySentScreen({
@@ -62,14 +60,14 @@ class _SuccesScrenState extends State<InvestSuccefullySentScreen>
             height: size.height * 0.06,
             width: size.width / 2,
             child: MaterialButton(
-                textColor: w,
-                color: green,
+                textColor: backgroundColor,
+                color: primaryColor,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(context,
                       PageRouteBuilder(pageBuilder: (context, s, a) {
-                    return const HomeTabsScren();
+                    return const DzcoinsApp();
                   }), (route) => false);
                 },
                 child: Text('close'.tr)),

@@ -59,6 +59,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   awesome_dialog: ^3.2.0
+  fl_chart: ^0.68.0
 
 
 dev_dependencies:

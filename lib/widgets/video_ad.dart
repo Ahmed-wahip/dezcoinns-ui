@@ -1,4 +1,3 @@
-
 import 'package:dzcoins/core/color_app.dart';
 import 'package:flutter/material.dart';
 import 'package:chewie/chewie.dart';
@@ -32,9 +31,7 @@ class _VideoAdScrenState extends State<VideoAdScren>
   @override
   void initState() {
     init();
-    videoPlayerController.addListener(() {
-     
-    });
+    videoPlayerController.addListener(() {});
 
     super.initState();
     _controller = AnimationController(vsync: this);
@@ -76,7 +73,7 @@ class _VideoAdScrenState extends State<VideoAdScren>
                 height: 50,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
-                textColor: w,
+                textColor: backgroundColor,
                 color: Colors.pink,
                 onPressed: () async {
                   if (!await launchUrl(

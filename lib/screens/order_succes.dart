@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-
 import '../core/color_app.dart';
 
 class SuccesPayment extends StatelessWidget {
@@ -10,9 +9,9 @@ class SuccesPayment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: w,
+      backgroundColor: backgroundColor,
       appBar: AppBar(
-        backgroundColor: w,
+        backgroundColor: backgroundColor,
         elevation: 0,
         foregroundColor: b,
       ),

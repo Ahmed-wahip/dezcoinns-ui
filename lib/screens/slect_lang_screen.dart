@@ -54,13 +54,13 @@ class _SlectLangScreenState extends State<SlectLangScreen>
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: green,
+        backgroundColor: primaryColor,
         onPressed: () {
           pushTo(context, const LoginScreen());
         },
         label: Text(
           'save'.tr,
-          style: TextStyle(color: w, fontFamily: 'Lato'),
+          style: TextStyle(color: backgroundColor, fontFamily: 'Lato'),
         ),
       ),
     );
